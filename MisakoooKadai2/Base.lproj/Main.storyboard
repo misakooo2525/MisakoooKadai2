@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,24 +13,24 @@
             <objects>
                 <viewController storyboardIdentifier="CalculationViewController" id="BYZ-38-t0r" customClass="CalculationViewController" customModule="MisakoooKadai2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nJa-Ec-uMV">
-                                <rect key="frame" x="107" y="69" width="214" height="193"/>
+                                <rect key="frame" x="80" y="25" width="160" height="122"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJi-Hv-cn3">
-                                        <rect key="frame" x="0.0" y="0.0" width="214" height="37"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="19"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-b8-P5M">
-                                        <rect key="frame" x="0.0" y="52" width="214" height="37"/>
+                                        <rect key="frame" x="0.0" y="34" width="160" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2XR-1w-R4x">
-                                        <rect key="frame" x="0.0" y="104" width="214" height="38"/>
+                                        <rect key="frame" x="0.0" y="68.5" width="160" height="20"/>
                                         <segments>
                                             <segment title="+"/>
                                             <segment title="-"/>
@@ -39,10 +39,10 @@
                                         </segments>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXh-ZJ-SNb">
-                                        <rect key="frame" x="0.0" y="156" width="214" height="37"/>
+                                        <rect key="frame" x="0.0" y="102.5" width="160" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Button"/>
-                                        <variation key="heightClass=compact">
+                                        <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         </variation>
                                         <connections>
@@ -53,11 +53,11 @@
                                 <variation key="heightClass=compact" spacing="10"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXB-YC-25H">
-                                <rect key="frame" x="40" y="272" width="214" height="31.333333333333314"/>
+                                <rect key="frame" x="40" y="157" width="160" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 </variation>
                             </label>
@@ -72,7 +72,9 @@
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
                             <constraint firstItem="nJa-Ec-uMV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SmP-r4-8Ke"/>
-                            <constraint firstItem="nJa-Ec-uMV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="TrB-x5-31r"/>
+                            <constraint firstItem="nJa-Ec-uMV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="TrB-x5-31r">
+                                <variation key="heightClass=compact-widthClass=compact" constant="5"/>
+                            </constraint>
                             <constraint firstItem="2XR-1w-R4x" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.04" id="bcN-Hh-dKU">
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
