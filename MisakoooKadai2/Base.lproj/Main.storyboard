@@ -23,9 +23,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="214" height="37"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                        <connections>
-                                            <action selector="textFieldSelect:" destination="8bC-Xf-vdC" eventType="editingDidEnd" id="fWK-ba-xtp"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-b8-P5M">
                                         <rect key="frame" x="0.0" y="52" width="214" height="37"/>
@@ -40,9 +37,6 @@
                                             <segment title="×"/>
                                             <segment title="÷"/>
                                         </segments>
-                                        <connections>
-                                            <action selector="selectedOperatorSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="Y5U-aI-hO1"/>
-                                        </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXh-ZJ-SNb">
                                         <rect key="frame" x="0.0" y="156" width="214" height="37"/>
@@ -50,9 +44,6 @@
                                         <state key="normal" title="Button"/>
                                         <variation key="heightClass=compact">
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         </variation>
                                         <connections>
                                             <action selector="didTapCalculationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEn-R5-iQM"/>
@@ -68,9 +59,6 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=compact">
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -98,6 +86,7 @@
                             <constraint firstItem="VXB-YC-25H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0228795" constant="10" id="hAK-Py-lD4">
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VXB-YC-25H" secondAttribute="trailing" symbolic="YES" id="jW5-Af-eXw"/>
                             <constraint firstItem="MXh-ZJ-SNb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.04" id="p25-P2-RWr">
                                 <variation key="heightClass=compact" constant="10"/>
                             </constraint>
