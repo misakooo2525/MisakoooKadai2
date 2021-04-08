@@ -99,7 +99,7 @@
                         <outlet property="numberTextField1" destination="xJi-Hv-cn3" id="kgZ-U9-bdI"/>
                         <outlet property="numberTextField2" destination="Tcc-b8-P5M" id="e6D-Sh-vp2"/>
                         <outlet property="operatorSegmentedControl" destination="2XR-1w-R4x" id="5HB-nC-Icd"/>
-                        <outlet property="totalLabel" destination="VXB-YC-25H" id="dJt-xu-TOy"/>
+                        <outlet property="resultLabel" destination="VXB-YC-25H" id="KI9-Qs-e3M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
